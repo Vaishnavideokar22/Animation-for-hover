@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    /* background-color: aqua; */
+}
+
+.wrapper{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contanier{
+    height: 40%;
+    width: 90%;
+     /* background-color: black;  */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    transform-style: preserve-3d;
+    transform:perspective(1000px) ;
+    
+}
+
+.box{
+    height: 90%;
+    width: 12%;
+    background-color: antiquewhite;
+    background-image: url(/leaf.avif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(.4);
+    transition: .2s;
+}
+
+.box2{
+    background-image: url(/cofee.avif);
+}
+
+.box3{
+    background-image: url(/home.avif);
+}
+
+.box4{
+    background-image: url(/mountain.avif);
+}
+
+.box5{
+    background-image: url(/pumkin.jpg);
+}
+
+.box6{
+    background-image: url(/river.jpg);
+}
+
+.box7{
+    background-image: url(/robot\ image.avif);
+}
+
+.box:hover{
+    filter: brightness(1);
+    cursor: pointer;
+    transform: translateZ(200px);
+}
+
+.box:hover + *{
+    filter: brightness(.6);
+    transform: translateY(150px) rotateY(40deg);
+}
+
+.box:hover + * + *{
+    filter: brightness(.4);
+    transform: translateY(75px) rotateY(20deg);
+}
+
+.box:has(  + *:hover){
+    filter: brightness(.6);
+    transform: translateY(150px) rotateY(-40deg);
+}
+
+.box:has( + * + *:hover){
+    filter: brightness(.4);
+    transform: translateY(75px) rotateY(-20deg);
+}
