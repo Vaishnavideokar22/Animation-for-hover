@@ -35,7 +35,7 @@ html,body{
     height: 90%;
     width: 12%;
     background-color: antiquewhite;
-    background-image: url(/leaf.avif);
+    background-image: url(leaf.avif);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -44,27 +44,27 @@ html,body{
 }
 
 .box2{
-    background-image: url(/cofee.avif);
+    background-image: url(cofee.avif);
 }
 
 .box3{
-    background-image: url(/home.avif);
+    background-image: url(home.avif);
 }
 
 .box4{
-    background-image: url(/mountain.avif);
+    background-image: url(mountain.avif);
 }
 
 .box5{
-    background-image: url(/pumkin.jpg);
+    background-image: url(pumkin.jpg);
 }
 
 .box6{
-    background-image: url(/river.jpg);
+    background-image: url(river.jpg);
 }
 
 .box7{
-    background-image: url(/robot\ image.avif);
+    background-image: url(robot\ image.avif);
 }
 
 .box:hover{
